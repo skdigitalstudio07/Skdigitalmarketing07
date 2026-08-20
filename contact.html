@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | SK Digital Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">SK<span>.</span></a>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="page-hero">
+  <p>GET IN TOUCH</p>
+  <h1>Let's <span>Talk.</span></h1>
+</section>
+
+<section class="contact-section">
+
+  <div class="contact-info">
+
+    <p class="label">CONTACT SK DIGITAL STUDIO</p>
+
+    <h2>Have a project<br>in <span>mind?</span></h2>
+
+    <p>
+      Tell us about your idea and let's create something amazing together.
+    </p>
+
+    <div class="contact-detail">
+      <span>✉</span>
+      <div>
+        <small>EMAIL</small>
+        <p>skdigitalstudio@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="contact-detail">
+      <span>⌂</span>
+      <div>
+        <small>LOCATION</small>
+        <p>Kishangarh, Rajasthan, India</p>
+      </div>
+    </div>
+
+  </div>
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <input type="text" id="subject" placeholder="Subject" required>
+
+    <textarea id="message" rows="7" placeholder="Tell us about your project..." required></textarea>
+
+    <button type="submit" class="btn primary">Send Message →</button>
+
+  </form>
+
+</section>
+
+<footer>
+  <div class="footer-logo">SK<span>.</span></div>
+  <p>© 2026 SK Digital Studio. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
